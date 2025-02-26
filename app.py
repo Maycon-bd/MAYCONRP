@@ -1,5 +1,6 @@
-def saudacao():
-    return "Olá, mundo!"
+def saudacao(nome="Mundo"):
+    return f"Olá, {nome}!"
 
 if __name__ == "__main__":
-    print(saudacao())
+    nome = input("Digite seu nome: ")
+    print(saudacao(nome))
